@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ember-night</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>ember-night</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
-    <%= render '/layouts/nav' %>
-    <div class="container">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <%= render '/layouts/nav' %>
+  <div class="container">
+    <span class="notice"><%= notice %></span>
+    <span class="alert"><%= alert %></span>
     <%= yield %>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

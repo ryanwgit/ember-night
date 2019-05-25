@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+#manging user auth with devise
+gem 'devise', '~> 4.6', '>= 4.6.2'
+
 #for Twitter UI components
 gem 'bootstrap', '~> 4.3.1'
 
