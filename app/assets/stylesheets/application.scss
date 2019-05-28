@@ -12,3 +12,18 @@
  *
  */
 @import "bootstrap";
+
+body {
+    background-color: #e6ecf0;
+}
+
+.nav {
+    background-color: white;
+}
+
+.navbar-brand-img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+}
