@@ -6,14 +6,21 @@
             <div class="card-body">
                 <p>stats</p>
             </div>
+            <div class="card">
+                <div class="card-body">
+                    <p>Trends for you</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-sm-6">
+        <% for @p in @posts %>
         <div class="card">
             <div class="card-body">
-                <p>feed</p>
+                <p><%= @p.content %></p>
             </div>
         </div>
+        <% end %>
     </div>
     <div class="col-sm">
         <div class="card">
@@ -25,7 +32,7 @@
 </div>
 
 <%# 2nd col (trending) %>
-<div class="row">
+<%# <div class="row">
         <div class="col-sm-3">
         <div class="card">
             <div class="card-body">
@@ -33,4 +40,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> %>

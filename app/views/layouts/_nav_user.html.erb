@@ -11,13 +11,7 @@
           <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Moments</a>
-      </li>
-         <li class="nav-item">
-        <a class="nav-link" href="#">Notifications</a>
-      </li>
-         <li class="nav-item">
-        <a class="nav-link" href="#">Messages</a>
+        <a class="nav-link" href="#">Explore</a>
       </li>
     </ul>
     <ul class="navbar-nav navbar-right">
@@ -28,7 +22,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= current_user.username %></a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/profile">Profile</a>
+          <a class="dropdown-item" href="/user/<%= current_user.username %>">Profile</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/help">Help</a>
               <div class="dropdown-divider"></div>
