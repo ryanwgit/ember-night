@@ -12,9 +12,20 @@
         </div>
     </div>
     <div class="col-sm-6">
+        <%= render 'components/post_form' %> <br><br>
+
         <% for @p in @posts %>
-        <div class="card">
+        <div class="card post-panel">
             <div class="card-body">
+            <div class="col-sm-3">
+                AVATAR
+            </div>
+            <div class="col-sm-11">
+                CONTENT
+            </div>
+              <div class="col-sm-12">
+                Links
+            </div>
                 <p><%= @p.content %></p>
             </div>
         </div>
