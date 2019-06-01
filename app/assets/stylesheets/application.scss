@@ -28,8 +28,26 @@ body {
     left: 50%;
 }
 
-.post-panel {
-    
+.post-title {
+       text-align: left;
+       margin-left: 15px;
 }
 
+.post-content {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.post-links {
+
+}
+
+.post-owner {
+    color: black;
+    font-weight: bold;
+}
+
+.post-creation {
+    opacity: 0.65;
+}
 

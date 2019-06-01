@@ -3,6 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+
+#similar icon package for twitter
+gem 'octicons', '~> 8.5'
+gem 'octicons_helper', '~> 8.5'
+gem 'jekyll-octicons', '~> 8.5'
+
 #manging user auth with devise
 gem 'devise', '~> 4.6', '>= 4.6.2'
 

@@ -15,22 +15,34 @@
         <%= render 'components/post_form' %> <br><br>
 
         <% for @p in @posts %>
-        <div class="card post-panel">
-            <div class="card-body">
-            <div class="col-sm-3">
-                AVATAR
+        <div class="card card-default post-panel">
+            <div class="card-body row">
+
+                <div class="col-sm-3">
+                    <img src="/avatar.png" height="50px" width="50px"></img>
+                </div>
+
+                <div class="col-sm">
+                    <p class="post-title"><span class="post-owner"><%= User.find(@p.user_id).username %></span> <span
+                            class="post-creation">- <%= @p.created_at.to_formatted_s(:short) %></span></p>
+                    <p class="post-content"><%= @p.content %></p>
+                </div>
+
             </div>
-            <div class="col-sm-11">
-                CONTENT
-            </div>
-              <div class="col-sm-12">
-                Links
-            </div>
-                <p><%= @p.content %></p>
+            <div class="col-sm">
+                <p class="post-links">
+
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+
+                </p>
             </div>
         </div>
         <% end %>
     </div>
+
     <div class="col-sm">
         <div class="card">
             <div class="card-body">

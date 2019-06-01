@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 
 # back-end code for pages/profile
   def profile
-    #username from the URL as :id
+    # username from the URL as :id
    if (User.find_by_username(params[:id]))
      @username = params[:id]
   else
