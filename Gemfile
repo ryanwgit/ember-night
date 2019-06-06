@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+#icon pack
+gem 'glyphicons-rails', '~> 0.1.2'
+gem 'bootstrap-glyphicons', '~> 0.0.1'
 
 #similar icon package for twitter
 gem 'octicons', '~> 8.5'

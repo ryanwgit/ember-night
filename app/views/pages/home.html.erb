@@ -1,3 +1,4 @@
+
 <div class="row">
     <div class="col-sm">
         <div class="card">
@@ -18,8 +19,8 @@
         <div class="card card-default post-panel">
             <div class="card-body row">
 
-                <div class="col-sm-3">
-                    <img src="/avatar.png" height="50px" width="50px"></img>
+                <div class="col-sm-">
+                    <img src="/avatar.png" class="rounded-img"height="50px" width="50px"></img>
                 </div>
 
                 <div class="col-sm">
@@ -31,17 +32,25 @@
             </div>
             <div class="col-sm">
                 <p class="post-links">
-
-                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-
+                    <span class="glyphicon glyphicon-comment g-links" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-retweet g-links" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-heart g-links" aria-hidden="true"></span>
+                    <span class="glyphicon-minus g-links" aria-hidden="true"></span>
+                    <a href="">View Media</a>
                 </p>
             </div>
         </div>
+      
         <% end %>
+              <div class="card card-default post-panel">
+            <div class="card-body row">
+            <div class="col-sm">
+            <center><img src="ror.png" height="25px" width="25px"></img></center>
+            <center><a href="#top"><p class="opacity: .7; color: grey;">Back to Top<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></p></a></center>
+            </div>
+        </div>
     </div>
+      </div>
 
     <div class="col-sm">
         <div class="card">
@@ -51,14 +60,3 @@
         </div>
     </div>
 </div>
-
-<%# 2nd col (trending) %>
-<%# <div class="row">
-        <div class="col-sm-3">
-        <div class="card">
-            <div class="card-body">
-                <p>Trends for you</p>
-            </div>
-        </div>
-    </div>
-</div> %>

@@ -12,6 +12,8 @@
  *
  */
 @import "bootstrap";
+@import 'bootstrap/glyphicons';
+@import "glyphicons";
 
 body {
     background-color: #e6ecf0;
@@ -19,6 +21,10 @@ body {
 
 .nav {
     background-color: white;
+}
+
+.rounded-img {
+    border-radius: 5%;
 }
 
 .navbar-brand-img {
@@ -30,7 +36,7 @@ body {
 
 .post-title {
        text-align: left;
-       margin-left: 15px;
+       margin-left: 5px;
 }
 
 .post-content {
@@ -39,7 +45,7 @@ body {
 }
 
 .post-links {
-
+text-align: left;
 }
 
 .post-owner {
@@ -50,4 +56,16 @@ body {
 .post-creation {
     opacity: 0.65;
 }
+
+.g-links {
+    text-align: left;
+    opacity: 0.4;
+    font-size: 120%;
+    margin-right: 75px;
+}
+
+.post-form-panel {
+    margin-bottom: -21px;
+}
+
 
