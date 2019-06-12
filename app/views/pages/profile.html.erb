@@ -1,8 +1,7 @@
 <div class="row">
     <div class="col-sm-12">
-        <div class="jumbotron">
-            <%# <%= @username %>
-        </div>
+
+    
     </div>
 </div>
 
@@ -16,7 +15,35 @@
         </div>
     </div>
     <div class="col-sm-6">
-    <%= render 'components/post_form' %>
+    <%= render 'components/post_form' %><br><br>
+
+            <% for @p in @posts %>
+        <div class="card card-default post-card">
+            <div class="card-body row">
+
+                <div class="col-sm-">
+                    <img src="/avatar.png" class="rounded-img" height="50px" width="50px"></img>
+                </div>
+
+                <div class="col-sm">
+                    <p class="post-title"><span class="post-owner"><%= User.find(@p.user_id).username %></span> <span
+                            class="post-creation">- <%= @p.created_at.to_formatted_s(:short) %></span></p>
+                    <p class="post-content"><%= @p.content %></p>
+                </div>
+
+            </div>
+            <div class="col-sm">
+                <p class="post-links">
+                    <span class="glyphicon glyphicon-comment g-links" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-retweet g-links" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-heart g-links" aria-hidden="true"></span>
+                    <span class="glyphicon-minus g-links" aria-hidden="true"></span>
+                    <a href="">View Media</a>
+                </p>
+            </div>
+        </div>
+
+        <% end %>
         <% for @p in @posts %>
         <div class="card">
             <div class="card-body">
