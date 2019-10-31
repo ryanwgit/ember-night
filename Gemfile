@@ -13,7 +13,7 @@ gem 'octicons_helper', '~> 8.5'
 gem 'jekyll-octicons', '~> 8.5'
 
 #manging user auth with devise
-gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'devise', '~> 4.7'
 
 #for Twitter UI components
 gem 'bootstrap', '~> 4.3.1'
